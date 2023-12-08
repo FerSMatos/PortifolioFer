@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Locadora 2000 </title>
+
+	<!--Bootstrap-->
+	<!-- referência CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+	<!-- referências JS -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+	<script src="script.js"></script>
+
+</head>
+<body>
+
+	<!--Barra de navegação-->
+	<nav class="navbar navbar-expand-lg bg-light">
+		<div class="container-fluid">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					
+					<li class="nav-item">
+						<a href="#tabFilmes" class="nav-link active" aria-current="page"> Filmes Disponíveis </a>
+					</li>
+
+					<li class=" nav-item dropdown">
+						<a href="#drop" class="nav-link dropdown-toggle" id="dropGerenos" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Filmes Por Categoria </a>
+
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li> <a href="#gAcao" class="dropdown-item"> Ação </a> </li>
+							<li> <a href="#gAnim" class="dropdown-item"> Animação
+							</a> </li>
+							<li> <a href="#gRoman" class="dropdown-item"> Romance </a> </li>
+							<li> <a href="#gSus" class="dropdown-item"> Suspense </a> </li>
+							<li> <a href="#gCome" class="dropdown-item"> Comédia </a> </li>
+							<li> <a href="#gDrama" class="dropdown-item"> Drama </a> </li>
+						</ul>
+
+					</li>
+
+					<li class="nav-item">
+						<a href="#cadFilmes" class="nav-link"> Cadastrar Filmes </a>
+					</li>
+				</ul>
+			</div>
+
+			<img src="img/film.png" width="3%">
+			<a href="#topo" class="navbar-brand"> Locadora 2000 </a>
+
+		</div>
+
+	</nav>
+
+	<!--Tabela-->
+	<div class="container">
+		<table class="table table-striped table-hover">
+
+			<!-- Cabeçalho de tabela-->
+			<thead>
+				<tr>
+					<th scope="col">Código</th>
+					<th scope="col">Título</th>
+					<th scope="col">Diretor</th>
+					<th scope="col">Ator/Atriz Principal</th>
+					<th scope="col">Lançamento</th>
+					<th scope="col">Nota IMDb</th>
+					<th scope="col">Gênero</th>
+				</tr>
+			</thead>
+
+			<!-- Corpo de tabela-->
+			<tbody>
+				<tr>
+					<th class="text-center table-primary" colspan=7 id="gAcao"> Ação </th>
+				</tr>
+				<tr>
+					<th scope="row">1</th>
+					<td>As Panteras</td>
+					<td>McG</td>
+					<td>Cameron Diaz, Drew Barrymore e Lucy Liu</td>
+					<td>2000</td>
+					<td>5,6/10</td>
+					<td>Ação</td>
+				</tr>
+
+				<tr>
+					<th class="text-center table-primary" colspan=7 id="gAcao"> Ação </th>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>Velozes e Furiosos</td>
+					<td>Rob Cohen</td>
+					<td>Vin Diesel, Paul Walker, Michelle Rodriguez, Jordana Brewster</td>
+					<td>2001</td>
+					<td>6,8/10</td>
+					<td>Ação</td>
+				</tr>
+
+				<tr>
+					<th class="text-center table-primary" colspan=7 id="gAnim"> Animação </th></tr>
+
+					<th scope="row">3</th>
+					<td> O Rei Leão</td>
+					<td>Roger Allers e Rob Minkoff</td>
+					<td>Matthew Broderick, Jeremy Irons, James Earl Jones e Whoopi Goldberg</td>
+					<td>1994</td>
+					<td>8,5/10</td>
+					<td>Animação</td>
+				</tr>
+
+				<tr>
+					<th class="text-center table-primary" colspan=7 id="gAnim"> Animação </th>
+				</tr>
+				<tr>
+					<th scope="row">4</th>
+					<td>Avatar: O Caminho da Água</td>
+					<td>James Cameron</td>
+					<td>Sam Worthington, Zoe Saldaña, Kate Winslet</td>
+					<td>2022</td>
+					<td>7,6/10</td>
+					<td>Animação</td>
+				</tr>
+
+				<tr>
+					<th class="text-center table-primary" colspan=7 id="gRoman"> Romance </th>
+				</tr>
+				<tr>
+					<th scope="row">5</th>
+					<td>Cartas para Julieta</td>
+					<td>Gary Winick</td>
+					<td>Amanda Seyfried, Gael Garcia Bernal e Vanessa Redgrave</td>
+					<td>2010</td>
+					<td>6,5/10</td>
+					<td>Romance</td>
+				</tr>
+
+				<tr>
+					<th class="text-center table-primary" colspan=7 id="gRoman"> Romance </th>
+				</tr>
+				<tr>
+					<th scope="row">6</th>
+					<td>Azul é a Cor mais Quente</td>
+					<td>Abdellatif Kechiche</td>
+					<td>Léa Seydoux, Adele Exarchopoulos</td>
+					<td>2013</td>
+					<td>7,7/10</td>
+					<td>Romance</td>
+				</tr>
+
+				<tr>
+					<th class="text-center table-primary" colspan=7 id="gSus"> Suspense </th>
+				</tr>
+				<tr>
+					<th scope="row">7</th>
+					<td>Parasita</td>
+					<td>Bong Joon Ho</td>
+					<td>Sobg Kang-ho, Lee Sun-Kyun e Cho yeo-jeong</td>
+					<td>2019</td>
+					<td>8,5/10</td>
+					<td>Suspense</td>
+				</tr>
+
+				<tr>
+					<th class="text-center table-primary" colspan=7 id="gSus"> Suspense </th>
+				</tr>
+					<th scope="row">8</th>
+					<td>Cães de Aluguel</td>
+					<td>Quentin Tarantino</td>
+					<td>Harvey Keitel, Tim Roth e Michael Madsen</td>
+					<td>2019</td>
+					<td>8,5/10</td>
+					<td>Suspense</td>
+				</tr>
+
+				<tr>
+					<th class="text-center table-primary" colspan=7 id="gCome"> Comédia </th>
+				</tr>
+					<th scope="row">9</th>
+					<td>As Branquelas</td>
+					<td>Keenen Ivory Wayans</td>
+					<td>Marlon WayansShawn, WayansBusy Philipps</td>
+					<td>2004</td>
+					<td>5,8/10</td>
+					<td>Comédia</td>
+				</tr>
+
+				<tr>
+					<th class="text-center table-primary" colspan=7 id="gCome"> Comédia </th>
+				</tr>
+					<th scope="row">10</th>
+					<td>De Pernas Pro AR </td>
+					<td>Roberto Santucci</td>
+					<td>Ingrid GuimarãesMaria PaulaBruno Garcia</td>
+					<td>2010</td>
+					<td>5,6/10</td>
+					<td>Comédia</td>
+				</tr>
+
+				<tr>
+					<th class="text-center table-primary" colspan=7 id="gDrama"> Drama </th>
+				</tr>
+					<th scope="row">11</th>
+					<td>A culpa é das Estrelas </td>
+					<td>Josh Boone</td>
+					<td>Scott NeustadterMichael H. WeberJohn Green</td>
+					<td>2014</td>
+					<td>7,7/10</td>
+					<td>Drama</td>
+				</tr>
+
+				<tr>
+					<th class="text-center table-primary" colspan=7 id="gDrama"> Drama </th>
+				</tr>
+					<th scope="row">12</th>
+					<td>Eu: Daniel Blake </td>
+					<td>Ken Loach</td>
+					<td>Dave JohnsHayley SquiresSharon Percy</td>
+					<td>2016</td>
+					<td>7,8/10</td>
+					<td>Drama</td>
+				</tr>
+				<tr id="inserirTabela">
+					
+				</tr>
+
+			</tbody>
+		</table>
+	</div>
+
+	<!--Linha divisória-->
+
+	<div class="m-5"> 
+		<hr class="border-primary border-3 opacity-75">
+	</div>
+
+	<!--Formulário cadastrar filmes-->
+	<div class="container mb-5">
+		<h2 class="text-center">Cadastrar Filme</h2>
+
+		<form name="cadastrar" onsubmit="event.preventDefault()">
+			
+			<!--linha código e data-->
+			<div class="row">
+				
+				<!--código-->
+				<div class="mb-3 col">
+					<label  for="codFilme" class="form-label">Código</label>
+					<input type="text" id="codFilme" name="codigo" class="form-control" required>
+				</div>
+
+				<!--data de lançamento-->
+				<div class="mb-3 col">
+					<label for="anoFilme" class="form-label">Data de Lançamento</label>
+					<input  type="text" class="form-control" id="anoFilme" name="data" placeholder="AAAA" required> 
+				</div>
+
+				
+			</div>
+
+			<!--linha título e diretor-->
+			<div class="row">
+				<!-- coluna título-->
+				<div class="mb-3 col">
+					<label for="títuloFilme" class="form-label">Título do filme</label>
+					<input type="text" id="títuloFilme" class="form-control" name="titulo" required>
+				</div>
+
+				<!-- coluna diretor-->
+				<div class="mb-3 col">
+					<label for="diretorFilme" class="form-label
+					">Diretor(a)</label>
+					<input type="text" id="diretorFilme" class="form-control" name="diretor" required>					
+				</div>
+				
+			</div>
+
+			<!--linha gêneros-->
+			<div class="row">
+
+				<div class="mb3 col form-check">
+					<input type="radio" name="radio" id="radioGeneroAcao" class="form-check-input" value="Ação" required>
+					<label for="radioGeneroAcao" class="form-label">Ação</label><br>
+					<input type="radio" name="radio" id="radioGeneroAnim" class="form-check-input" value="Animação">
+					<label for="radioGeneroAnim" class="form-label">Animação</label><br>
+					<input type="radio" name="radio" id="radioGeneroRoman" class="form-check-input" value="Romance">
+					<label for="radioGeneroRoman" class="form-label">Romance</label><br>
+				</div>
+
+				<div class="mb3 col form-check">
+					<input type="radio" name="radio" id="radioGeneroSus" class="form-check-input" value= "Suspense">
+					<label for="radioGeneroSus" class="form-label">Suspense</label><br>
+					<input type="radio" name="radio" id="radioGeneroCome" class="form-check-input" value="Comédia">
+					<label for="radioGeneroCome" class="form-label">Comédia</label><br>
+					<input type="radio" name="radio" id="radioGeneroDrama" class="form-check-input" value="drama">
+					<label for="radioGeneroDrama" class="form-label">Drama</label><br>
+				</div>	
+
+			</div>
+
+			<!--Atriz/Ator principal e nota-->
+			<div class="row">
+
+				<!--coluna atriz/ator -->
+				<div class="mb-3 col">
+					<label  for="atorFilme" class="form-label">Atriz/Ator principal </label>
+					<input type="text" id="atorFilme" class="form-control" name="ator" required>
+
+					<!--nota -->
+				<div class="mb-3 col">
+					<label  for="imdbFilme" class="form-label">Nota IMDb </label>
+					<input type="text" id="imdbFilme" class="form-control" name="nota" required>
+				</div>
+
+
+
+			<!--botão enviar-->
+			<div class="col-auto">
+				<button type="submit" class="btn btn-primary mb-3" onclick="inserir()">Cadastrar</button>				
+			</div>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* página toda */
+body {
+	background-color: #ffedba;
+	font-family: Open Sans;
+	color: black;
+	text-align: justify;
+	margin: auto;
+}
+
+/* Título principal */
+h1 {
+	background-color: #a06c3f;
+	text-align: center;
+	font-family: Oswald;
+	color: #e8cb9a;
+}
+
+/* Cabeçalho */
+h4 {
+	text-align: center;
+	font-family: Poppins;
+	background-color: #623307;
+	color:#ffedba;
+}
+
+h2 {
+	font-family: Oswald ;
+	color: #8e582c;
+
+}
+
+/* links */
+a {
+    color: #623307; 
+    text-decoration: none;
+}
+
+a:hover {
+	color:snow;
+} 
+/* não ta funcionando 
+a:visited {
+	color:#e8cb9a;
+} */
+
+/* não ta funcionando
+a:active {
+	color:snow;
+} */ 
+
+a:focus {
+	color: snow;
+}
+
+/* tabelas */
+table {
+	whidth:100%;
+	text-align: center;
+	color: white;
+}
+th, td {
+	border-width: 2px;
+ 	border-style: solid;
+ 	border-color: white;
+ 	border-radius: 3px;
+}
+th { 
+	background-color: #834f23;
+	text-align: center;
+}
+td {
+	background-color: #d0ab7a;
+	color: #623307;
+}
+/* parágrafos */
+p {
+	text-indent: 50px;
+}
+
+/* imagem */
+img {
+	width: 300px;
+	display: block;
+	margin: auto;
+	border-radius: 15px;
+}
+
+
+/* títulos */
+.Titulo {
+	background-color:#a06c3f;
+	color: #ffedba;
+	text-align: center;
+}
+
+/* Destaques */ 
+span {
+	color: #d0ab7a;
+	font-style: italic;
+}
+
+/* seções*/
+section {
+	padding: 25px 25px 30px 25px;
+}
+	#l1,#l3,#l5 {
+	background-color: #b88b5c;
+}
